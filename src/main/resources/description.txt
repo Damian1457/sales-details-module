@@ -1,0 +1,77 @@
+Apteka Dbam o Zdrowie w Alejach Jerozolimskich 134, ma jako pierwsza zostać włączona do
+centralnego systemu zarządzania. Dzięki takiemu rozwiązaniu pracownicy w centrali będą mieli
+dostęp do apteki bezpośrednio ze swoich komputerów. Po zebraniu wymagań dyrekcja
+zadecydowała, że najpilniejszym tematem do przygotowania są cenniki produktów leczniczych. Do
+zaprojektowania jest API umożliwiające:
+1. Wprowadzanie cenników.
+2. Pobieranie zestawień sprzedaży.
+Aktualnie zainstalowany system apteczny zawiera już moduły do zarządzania produktami, jak również
+moduł sprzedażowy. Obecnie cena sprzedaży obliczana jest na podstawie ceny zakupu. Z tych
+gotowych elementów można korzystać, bez wchodzenia w szczegóły.
+
+
+RZECZOWNIKI
+- Apteka
+- Produkt
+- Cennik
+- Sprzedaż
+- Zakup
+
+CZASOWNIKI
+-
+
+
+sales-details-module
+
+
+UnitPrice
++ product: Product
++ price: BigDecimal
++ name: String
++ description: String
+
+UNIT PRICES
+Lista cenników
+/api/unitprices
+GET
+
+Dodaj cennik
+/api/unitprices + (body/payload)
+POST
+
+Pobierz cennik
+/api/unitprices/{id}
+GET
+
+Edytuj cennik
+/api/unitprices + (body/payload)
+PUT
+
+Usuń cennik
+/api/unitprices/{id}
+DELETE
+
+
+SalesSummary
++
+
+SALES SUMMARY
+Lista zestawień sprzedaży
+/api/salessummaries
+GET
+
+Dodaj zestawienie sprzedaży
+/api/salessummaries + (body/payload)
+POST
+
+Pobierz zestawienie sprzedaży
+/api/salessummaries/{id}
+GET
+
+Edytuj zestawienie sprzedaży
+/api/salessummaries + (body/payload)
+PUT
+
+Usuń zestawienie sprzedaży
+/api/salessummaries/{id}
+DELETE
