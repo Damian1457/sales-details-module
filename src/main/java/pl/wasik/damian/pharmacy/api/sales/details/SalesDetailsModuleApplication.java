@@ -31,13 +31,13 @@ public class SalesDetailsModuleApplication {
 	}
 
 	private ApiInfo createApiInfo() {
-		return new ApiInfo("Stundes API",
-				"Students database",
+		return new ApiInfo("sales-details-module",
+				"API for DOZ Pharmacy sales details module.",
 				"1.00",
-				"http://bykowski.pl",
-				new Contact("Przemek", "http://bykowski.pl", "przemek@bykowski.pl"),
+				"",
+				new Contact("Damian", "", "damian.wasik.dev@gmail.com"),
 				"my own licence",
-				"http://bykowski.pl",
+				"",
 				Collections.emptyList()
 		);
 	}
